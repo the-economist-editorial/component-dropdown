@@ -42,6 +42,7 @@
     to force to 100% width */
 img{
     width: 100%;
+    color: white;
   }
 
 /*  OVERWRITE CAPTION

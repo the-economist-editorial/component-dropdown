@@ -1,8 +1,6 @@
 /* global document, window */
 import React from 'react';
 import ImageCaption from '@economist/component-imagecaption';
-// For the resize smoothing timeout
-let TimeoutID;
 export default class DropDown extends React.Component {
 
   // PROP TYPES
@@ -58,11 +56,11 @@ export default class DropDown extends React.Component {
     // If state is closed, no need to fiddle.
     // If open, however...
     if (this.state.expanded) {
-      clearTimeout(timeoutID);
-      timeoutID = setTimeout(() => {
-        const innerH = document.getElementsByClassName('daily-features-inner-content')[0].offsetHeight;
+      clearTimeout(this.resizeTimeout);
+      this.resizeTimeout = setTimeout(() => {
+        const innerHeight = document.getElementsByClassName('daily-features-inner-content')[0].offsetHeight;
         // I pass in the target height, and a flag indicating that the function wasn't called from button click
-        this.resizeExpandableWrapper(innerH, false);
+        this.resizeExpandableWrapper(innerHeight, false);
       }, 250);
     }
   }
@@ -83,8 +81,8 @@ export default class DropDown extends React.Component {
     const outDiv = document.getElementsByClassName('daily-features-expandable-content')[0];
     const inDiv = document.getElementsByClassName('daily-features-inner-content')[0];
     let expanded = this.state.expanded;
-    let startHeight;
-    let endHeight;
+    let startHeight = 0;
+    let endHeight = 0;
     // 'expanded' is *current* state of the wrapper
     if (expanded) {
       // Div is open. If we clicked the button we shrink to zero...
@@ -147,6 +145,7 @@ export default class DropDown extends React.Component {
     const data = this.props.data;
     // Image and caption
     const imageSrc = data.image.src;
+    const imageAlt = data.image.alt;
     const imageCaption = data.image.caption;
     // Extended text
     const textHead = data.text.header;
@@ -180,7 +179,7 @@ export default class DropDown extends React.Component {
     return (
       <div className="daily-features-outer-wrapper">
         <div className = "daily-features-image-wrapper">
-            <ImageCaption className="daily-features-image-caption" caption={imageCaption} src={imageSrc}/>
+            <ImageCaption className="daily-features-image-caption" caption={imageCaption} src={imageSrc} alt={imageAlt}/>
         </div>
 
         <div className="daily-features-text-wrapper">
