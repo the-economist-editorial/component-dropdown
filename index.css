@@ -1,0 +1,112 @@
+.daily-features-outer-wrapper {
+  width: 100%;
+  max-width: 1191px;
+  min-width: 300px;
+  background-color: #444;
+  height:auto;
+  border-left: 5px solid green;
+}
+
+.daily-features-image-wrapper {
+  display: inline-block;
+  width: 100%;
+}
+
+.daily-features-image-caption {
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.daily-features-text-wrapper {
+  width: 100%;
+  background-color: #444;
+  color: white;
+}
+
+.daily-features-text-header {
+  font-size: 28px;
+  color: green;
+  margin: 0;
+  padding: 20px 10px 0 10px;
+}
+
+.daily-features-text-body {
+  font-size: 14px;
+  color: white;
+  margin: 0;
+  padding: 20px 10px 20px 10px;
+}
+
+/*  OVERWRITE IMG TAG IN COMPONENT-IMAGECAPTION
+    to force to 100% width */
+img{
+    width: 100%;
+  }
+
+/*  OVERWRITE CAPTION
+    to move to bottom left corner of image */
+figcaption {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+  font-size: 2em;
+  color: white;
+}
+
+/* EXPANDABLE DIV */
+
+/* Wrapper for text divs and button */
+.daily-features-expandable-wrapper {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+/* Outer div expands/folds to reveal/hide inner div */
+.daily-features-expandable-content {
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+
+/* Actual content div, inside the 'letterbox' */
+.daily-features-inner-content {
+  width: 100%;
+  height:auto;
+  overflow: hidden;
+  background-color: white;
+}
+
+/* Button wrapper... */
+.daily-features-expandable-button-wrapper {
+  position: relative;
+  width: 100%;
+  background-color: #444;
+  padding: 40px 0 40px 0;
+}
+/* ...and button */
+.daily-features-expandable-button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 10%;
+  height: 30px;
+  background-color: #aaaaaa;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 150px;
+  cursor: pointer;
+}
+
+.daily-features-expandable-button:hover {
+  background-color: #ccc;
+  color: black;
+}
+.daily-features-expandable-button:active {
+  background-color: #ff5555;
+}

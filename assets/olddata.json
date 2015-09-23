@@ -1,0 +1,37 @@
+{
+  "image": {
+    "src": "./images/Russia.png",
+    "caption": "Revised caption text"
+  },
+  "text": {
+    "header": "Text header",
+    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+  },
+  "expandedcontent": ["Content goes here<br/>Content goes here<br/>Content goes here<br/>Content goes here<br/Content goes here<br/Content goes here<br/Content goes here<br/Content goes here<br/Content goes here<br/Content goes here<br/Content goes here<br/Content goes here<br/Content goes here<br/Content goes here<br/Content goes here<br/Content goes here<br/>"],
+  "newexpandedcontent": [
+    {
+      "priority": 0,
+      "head": "June 1970",
+      "subhead": "Some text here",
+      "image": "",
+      "link": "",
+      "text": "Content goes here<br/>Content goes here<br/>Content goes here<br/>"
+    },
+    {
+      "priority": 1,
+      "head": "July 1970",
+      "subhead": "Another story here",
+      "image": "./images/Chart.png",
+      "link": "economist.com",
+      "text": "Content 2 goes here<br/>Content 2 goes here<br/>Content 2 goes here<br/>"
+    },
+    {
+      "priority": 2,
+      "head": "September 1971",
+      "subhead": "September 1971 here",
+      "image": "",
+      "link": "",
+      "text": "Content 3 goes here<br/>Content 3 goes here<br/>Content 3 goes here<br/>"
+    }
+  ]
+}
