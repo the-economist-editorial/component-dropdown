@@ -1,0 +1,19 @@
+{
+  "name": "@economist/component-dropdown",
+  "version": "1.0.0",
+  "description": "Dropdown expander to dig deeper into content",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/the-economist-editorial/component-dropdown.git"
+  },
+  "author": "The Economist Front End team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/the-economist-editorial/component-dropdown/issues"
+  },
+  "homepage": "https://github.com/the-economist-editorial/component-dropdown"
+}
